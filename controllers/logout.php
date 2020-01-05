@@ -1,0 +1,16 @@
+<?php
+session_start();
+unset($_SESSION["connected"]);
+unset($_SESSION["role"]);
+unset($_SESSION["id"]);
+unset($_SESSION["nom"]);
+unset($_SESSION["prenom"]);
+unset($_SESSION["departement"]);
+unset($_SESSION["telephone"]);
+unset($_SESSION["email"]);
+unset($_SESSION["cin"]);
+unset($_SESSION["cne"]);
+unset($_SESSION["filiere"]);
+unset($_SESSION["date"]);
+session_destroy();
+header("Location:/pfa-mouna");
